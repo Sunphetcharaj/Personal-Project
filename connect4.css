@@ -1,0 +1,28 @@
+#board {
+    height: 540px;
+    width: 630px;
+    border: 12px navy;
+    background-color: blue;
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    background-color: navy;
+    font-size: 2em;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    border-radius: 5px;
+}
+
+body {
+    text-align: center;
+}
