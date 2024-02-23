@@ -1,3 +1,5 @@
+//game variables
+
 var board;
 var gameover = false;
 
@@ -13,11 +15,25 @@ var currentPlayer = playerCat;
 window.onload = function() {
     setGame();
 }
+
+// Cite#1 I got this function from a video and I'll cite his github repo in README.md
+// function to create the tiles rather than me making 42 tiles individually
+
 function setGame() {
     board = [];
-    for (let c = 0; c < columns; c++)
-    let row = [];
-    for (let r = 0; r < rows; r++)
-        row.push('');
-
+  
+    for (let r = 0; r < rows; r++) {
+        let row = [];
+        for (let c = 0; c < columns; c++) {
+            // JS
+            row.push(' ');
+            // HTML
+            let tile = document.createElement("div");
+            tile.id = r.toString() + "-" + c.toString();
+            tile.classList.add("tile");
+            document.getElementById("board").append(tile);
+        }
+        board.push(row);
+    }
 }
+

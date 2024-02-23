@@ -15,3 +15,10 @@ If none of the players can connect 4 of their pieces and the entire board is fil
 ## Technical Information
 
 ## Issues
+
+## Citations
+-Cite#1 came from this github repo https://github.com/ImKennyYip/Connect4
+-
+-
+-
+-

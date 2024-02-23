@@ -26,3 +26,14 @@ a {
 body {
     text-align: center;
 }
+
+.tile {
+    height: 70px;
+    width: 70px;
+    margin: 5px;
+
+    background-color: white;
+    border-radius: 50%;
+    border: 5px solid navy;
+}
+
