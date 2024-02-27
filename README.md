@@ -16,3 +16,4 @@ If none of the players can connect 4 of their pieces and the entire board is fil
 -A little bit laggy when you first start playing because the dog img takes a second to load.
 ## Citations
 -Cite#1 came from this github repo https://github.com/ImKennyYip/Connect4
+-Cite#2 came from ChatGPT, wasn't sure how I was supposed to cite it so I did it how I saw fit.
