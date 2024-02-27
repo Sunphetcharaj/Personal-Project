@@ -6,6 +6,7 @@
     display: flex;
     margin: 0 auto;
     flex-wrap: wrap;
+    border-radius: 3%;
 }
 
 ul li a {
@@ -37,3 +38,25 @@ body {
     border: 5px solid navy;
 }
 
+.cat-chip {
+    background-image: url(https://placekitten.com/79/79);
+    background-color: white;
+}
+
+.dog-chip {
+    background-image: url(https://placedog.net/79/79);
+    background-color: white;
+}
+
+button {
+    font-size: 1.5em;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: blue;
+}
+
+body {
+    background-color: white;
+}
