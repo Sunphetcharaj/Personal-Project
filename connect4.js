@@ -159,3 +159,12 @@ function checkWinner() {
 }
 //cite#2 
 //function for Draw condition
+//used chatgpt to help me figure out how to make a draw function
+function checkDraw() {
+    if (totalMoves === rows * columns) {
+        let winner = document.getElementById("chat");
+        winner.innerText = "It's a Draw!";
+        gameOver = true;
+    }
+}
+
