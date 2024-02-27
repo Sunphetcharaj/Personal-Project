@@ -14,6 +14,7 @@ var currentColumns = [];
 var count = 0;
 let totalMoves = 0;
 
+//game start
 window.onload = function() {
     startGame();
 }
@@ -50,7 +51,6 @@ function startGame() {
 //cite#1
 // * Title: (js-connect-four) * Author:(Yip, K) * Date: (2022) * Code version:(source code) * Availability:(https://github.com/codyseibert/js-connect-four?tab=MIT-1-ov-file) * **/
 
-
 function setPiece() {
     if (gameOver ) {
     return;
@@ -64,8 +64,6 @@ function setPiece() {
     if (r < 0 ) {
         return;
     }
-
-    totalMoves++;
 
     board[r][c] = currentPlayer;
     let tile = document.getElementById(r.toString() + "-" + c.toString());
@@ -83,6 +81,8 @@ function setPiece() {
 
     r -= 1;
     currentColumns[c] = r;
+    
+    //check for win condition or draw
 
     checkWinner();
     checkDraw();
