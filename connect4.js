@@ -11,6 +11,9 @@ var rows = 6;
 var columns = 7;
 var currentColumns = [];
 
+var count = 0;
+let totalMoves = 0;
+
 window.onload = function() {
     startGame();
 }
@@ -39,6 +42,7 @@ function startGame() {
         }
         board.push(row);
 
+        totalMoves = 0;
     }
 }
 
@@ -49,7 +53,7 @@ function startGame() {
 
 function setPiece() {
     if (gameOver ) {
-        return;
+    return;
     }
 
     let coords = this.id.split("-");
@@ -60,6 +64,8 @@ function setPiece() {
     if (r < 0 ) {
         return;
     }
+
+    totalMoves++;
 
     board[r][c] = currentPlayer;
     let tile = document.getElementById(r.toString() + "-" + c.toString());
@@ -72,12 +78,16 @@ function setPiece() {
         tile.classList.add("dog-chip")
         currentPlayer = playerCat
         document.getElementById("chat").innerHTML = 'Player Cats Turn!'
+        
     }
 
     r -= 1;
     currentColumns[c] = r;
 
     checkWinner();
+    checkDraw();
+
+    
 }
 // checking horizontal win condition
 //cite#1
@@ -140,10 +150,12 @@ function checkWinner() {
         let winner = document.getElementById("chat");
         if (board[r][c] == playerCat) {
             winner.innerText = "Cat Wins!";
+            gameOver = true;
         } else {
             winner.innerText = "Dog Wins!";
+            gameOver = true;
         }
-        gamerOver = true;
     }
 }
-
+//cite#2 
+//function for Draw condition

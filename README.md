@@ -12,10 +12,7 @@ The 2 players take turns placing cats and dogs until one of them connects 4 of t
 If one of the players connects 4 of their pieces in a row then the game ends and the player who won will be shown on screen
 If none of the players can connect 4 of their pieces and the entire board is filled then it will end in a draw/tie
 
-## Technical Information
-
 ## Issues
-
+-A little bit laggy when you first start playing because the dog img takes a second to load.
 ## Citations
 -Cite#1 came from this github repo https://github.com/ImKennyYip/Connect4
--
